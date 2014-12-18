@@ -1,0 +1,184 @@
+/* FONT FAMILIES
+-------------------------------------------------- */
+/* Custom fonts */
+@font-face {
+font-family: Ballpark;
+font-style: normal;
+src: url('../fonts/BALLW___.ttf') format('truetype');
+}
+@font-face {
+font-family: Birds of Paradise;
+font-style: normal;
+src: url('../fonts/Birds of Paradise .ttf') format('truetype');
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+color: #5a5a5a;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+z-index: 20;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+padding-right: 0;
+padding-left: 0;
+}
+.navbar-wrapper .navbar {
+padding-right: 15px;
+padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+width: auto;
+}
+/* Index jumbotron */
+.jumbotron-index {
+height: 400px;
+background:transparent;
+}
+.jumbotron-bg {
+background: url('../images/header_background.png') no-repeat center center; 
+/*position: fixed;*/
+/*height: 350px; /* same height as jumbotron */
+top:0;
+left:0;
+z-index: -1;
+}
+.jumbotron-content{
+margin-top: 50px;
+text-align: center;
+}
+.jumbotron-content h1{
+font-family: Ballpark;
+font-size: 110px;
+color: #e5e2d4;
+text-shadow: 3px 3px 0 #CB5A65, -3px -3px 0 #CB5A65, 5px 5px 0 rgba(52, 54, 56, 0.3);
+}
+.jumbotron-content h2{
+font-family: Birds of Paradise;
+color: #e5e2d4;
+font-size: 46px;
+text-shadow: 2px 2px 0 #CB5A65, -2px -2px 0 #CB5A65, 4px 4px 0 rgba(52, 54, 56, 0.3);
+}
+.jumbotron-content .btn{
+color: #e5e2d4;
+font-size: 50px;
+text-shadow: 1px 1px 0 #CB5A65, -1px 1px 0 #CB5A65, 1px -1px 0 #CB5A65, -1px -1px 0 #CB5A65, 4px 4px 0 rgba(52, 54, 56, 0.2);
+transition: all .65s;
+}
+.jumbotron-content .btn:hover{
+/*color: rgba(0, 0, 0, 0);*/
+transform: translate(0, 5px);
+-webkit-transform: translate(0, 5px);
+-o-transform: translate(0, 5px);
+-moz-transform: translate(0, 5px);
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+margin-bottom: 20px;
+text-align: center;
+}
+.marketing h2 {
+font-weight: normal;
+}
+.marketing .col-lg-4 p {
+margin-right: 10px;
+margin-left: 10px;
+}
+/* Featurettes
+------------------------- */
+.featurette-divider {
+margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+font-weight: 300;
+line-height: 1;
+letter-spacing: -1px;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+/* Navbar positioning foo */
+.navbar-wrapper {
+margin-top: 20px;
+}
+.navbar-wrapper .container {
+padding-right: 15px;
+padding-left: 15px;
+}
+.navbar-wrapper .navbar {
+padding-right: 0;
+padding-left: 0;
+}
+/* The navbar becomes detached from the top, so we round the corners */
+.navbar-wrapper .navbar {
+border-radius: 4px;
+}
+/* Bump up size of carousel content */
+.carousel-caption p {
+margin-bottom: 20px;
+font-size: 21px;
+line-height: 1.4;
+}
+.featurette-heading {
+font-size: 50px;
+}
+}
+@media (min-width: 992px) {
+.featurette-heading {
+margin-top: 120px;
+}
+} 
+.main-body {
+margin-top: 120px;
+}
+/* FOOTER
+-------------------------------------------------- */
+/* 2-part footer. */
+/* top footer */
+.top-footer {
+background: url('../images/color_footer.png') no-repeat center center;
+height: 250px;
+bottom: 5;
+width: 100%;
+}
+/* Social Media images */
+.row .row-social-images {
+padding-top: 20px;
+}
+.col-social-images > .img-social {
+top: 20px;
+}
+.img-social:hover {
+opacity: 0.7;
+}
+/* bottom footer */
+.bottom-footer {
+background: url('../images/bottom_footer.png') no-repeat center center;
+height: 50px;
+bottom: 0;
+width: 100%;
+}
+.bottom-footer h5 {
+font-weight: bold;
+color: #CBC0A6;
+}
+.bottom-footer a {
+font-weight: bold;
+color: #CBC0A6;
+display: inline;
+}
+.bottom-footer a:hover {
+text-decoration: underline;
+}
