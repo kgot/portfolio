@@ -81,6 +81,36 @@ transform: translate(0, 5px);
 -o-transform: translate(0, 5px);
 -moz-transform: translate(0, 5px);
 }
+/* Fixed button */
+.fixedbutton {
+color: #E5E2D4;
+font-size: 30px;
+text-shadow: 1px 1px 0 #CB5A65, -1px 1px 0 #CB5A65, 1px -1px 0 #CB5A65, -1px -1px 0 #CB5A65, 3px 3px 0 rgba(52, 54, 56, 0.2);
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+border-radius: 100%;
+cursor: pointer;
+position: fixed;
+bottom: 60px;
+right: 20px; 
+height: 60px;
+width: 60px;
+line-height: 26px;
+padding: 15px;
+text-align: center;
+border-color: #CB5A65;
+}
+.grow { 
+transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+color: #E5E2D4;
+background-color: #CB5A65;
+border-color: #CB5A65; 
+transform: scale(1.1); 
+-webkit-transform: scale(1.1); 
+-o-transform: scale(1.1); 
+-moz-transform: scale(1.1); 
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
@@ -146,7 +176,7 @@ margin-top: 120px;
 /* FOOTER
 -------------------------------------------------- */
 /* 2-part footer. */
-/* top footer */
+/* Top footer */
 .top-footer {
 background: url('../images/color_footer.png') no-repeat center center;
 height: 250px;
@@ -161,9 +191,11 @@ padding-top: 20px;
 top: 20px;
 }
 .img-social:hover {
-opacity: 0.7;
+-webkit-filter: drop-shadow(5px 5px 5px rgba(52, 54, 56, 0.4));
+filter: url(shadow.svg#drop-shadow);
+/*opacity: 0.7;*/
 }
-/* bottom footer */
+/* Bottom footer */
 .bottom-footer {
 background: url('../images/bottom_footer.png') no-repeat center center;
 height: 50px;

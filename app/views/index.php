@@ -12,7 +12,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/app.js" ></script>
+    <script type="text/javascript" src="js/app.js"></script>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   </head>
   <body>     
     <div class="navbar-wrapper">
@@ -63,7 +64,11 @@
 		     <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
 		  </a>
 	 </div>	  
-    </div>  
+    </div>
+	
+	<a class="btn btn btn-default fixedbutton grow" href="#top-anchor" role="button">
+		<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+	</a>
 	  
     <!-- Marketing messaging and featurettes
     ================================================== -->
