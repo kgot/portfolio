@@ -13,6 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/app.js"></script>
+	<script src="js/jquery.viewport.mini.js" type="text/javascript"></script>
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   </head>
   <body>     
@@ -66,7 +67,7 @@
 	 </div>	  
     </div>
 	
-	<a class="btn btn btn-default fixedbutton grow" href="#top-anchor" role="button">
+	<a class="btn btn btn-default grow" id="btn-scroll-top" href="#top-anchor" role="button">
 		<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
 	</a>
 	  

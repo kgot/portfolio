@@ -14,8 +14,17 @@ $(document).ready(function() {
 	$('a[href*=#]').click(function(){
       $('html, body').animate({
           scrollTop: $( $(this).attr('href') ).offset().top
-      }, 500);
+      }, 500)
     return false;
-    });
-})
-
+    })
+	/*
+	 * Enable scroll-to-top button
+	 */
+	$(window).scroll(function () {
+       if($('.jumbotron').is(':in-viewport')){
+          $('#btn-scroll-top').fadeOut('slow')
+       }else{ // If not visible
+          $('#btn-scroll-top').fadeIn('slow')
+       }
+	})
+}) // document ready

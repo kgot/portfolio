@@ -82,7 +82,7 @@ transform: translate(0, 5px);
 -moz-transform: translate(0, 5px);
 }
 /* Fixed button */
-.fixedbutton {
+#btn-scroll-top {
 color: #E5E2D4;
 font-size: 30px;
 text-shadow: 1px 1px 0 #CB5A65, -1px 1px 0 #CB5A65, 1px -1px 0 #CB5A65, -1px -1px 0 #CB5A65, 3px 3px 0 rgba(52, 54, 56, 0.2);
