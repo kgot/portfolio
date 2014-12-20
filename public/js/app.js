@@ -20,6 +20,9 @@ $(document).ready(function() {
 	/*
 	 * Enable scroll-to-top button
 	 */
+	if($('.jumbotron').is(':in-viewport')){
+          $('#btn-scroll-top').hide()
+	}
 	$(window).scroll(function () {
        if($('.jumbotron').is(':in-viewport')){
           $('#btn-scroll-top').fadeOut('slow')
