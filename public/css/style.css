@@ -196,7 +196,7 @@ filter: url(shadow.svg#drop-shadow);
 }
 /* Bottom footer */
 .bottom-footer {
-background: url('../images/bottom_footer.png') repeat-x center center;
+background: url('../images/bottom_footer.png') no-repeat center center;
 height: 50px;
 bottom: 0;
 width: 100%;
