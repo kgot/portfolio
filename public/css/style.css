@@ -7,9 +7,8 @@ font-style: normal;
 src: url('../fonts/Ballpark.ttf') format('truetype');
 }
 @font-face {
-font-family: Birds of Paradise;
+font-family: 'Damion', cursive;
 font-style: normal;
-src: url('../fonts/Birds of Paradise .ttf') format('truetype');
 }
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -63,9 +62,9 @@ color: #e5e2d4;
 text-shadow: 3px 3px 0 #CB5A65, -3px -3px 0 #CB5A65, 5px 5px 0 rgba(52, 54, 56, 0.3);
 }
 .jumbotron-content h2{
-font-family: Birds of Paradise;
+font-family: Damion;
 color: #e5e2d4;
-font-size: 46px;
+font-size: 52px;
 text-shadow: 2px 2px 0 #CB5A65, -2px -2px 0 #CB5A65, 4px 4px 0 rgba(52, 54, 56, 0.3);
 }
 .jumbotron-content .btn{
