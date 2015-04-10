@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>K.G. Portfolio</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
@@ -204,16 +204,18 @@
 		
     </footer>
 
-	<!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<!-- Custom js scripts -->
-	<script type="text/javascript" src="js/app.js"></script>
-	<!-- Viewport jQuery plugin -->
-	<script src="js/jquery.viewport.mini.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom js scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- Viewport jQuery plugin -->
+    <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+    <!-- AngularJS -->
+    <script type="text/javascript" src="js/angular.mini.js"></script>
   </body>
 </html>
