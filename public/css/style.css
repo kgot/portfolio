@@ -2,214 +2,232 @@
 -------------------------------------------------- */
 /* Custom fonts */
 @font-face {
-font-family: Ballpark;
-font-style: normal;
-src: url('../fonts/Ballpark.ttf') format('truetype');
+    font-family: Ballpark;
+    font-style: normal;
+    src: url('../fonts/Ballpark.ttf') format('truetype');
 }
 @font-face {
-font-family: 'Damion', cursive;
-font-style: normal;
+    font-family: 'Damion', cursive;
+    font-style: normal;
 }
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 body {
-color: #5a5a5a;
+    color: #5a5a5a;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-position: absolute;
-top: 0;
-right: 0;
-left: 0;
-z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
 }
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
-padding-right: 0;
-padding-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 .navbar-wrapper .navbar {
-padding-right: 15px;
-padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .navbar-wrapper .navbar .container {
-width: auto;
+    width: auto;
 }
-/* Index jumbotron */
-.jumbotron-index {
-height: 400px;
-background:transparent;
+.section-top{
+    background: url('../images/header_background.png') no-repeat center center;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 400px;   
+    z-index: -1;
+    padding: 100px 0;
 }
-.jumbotron-bg {
-background: url('../images/header_background.png') no-repeat center center; 
-/*position: fixed;*/
-/*height: 350px; /* same height as jumbotron */
-top:0;
-left:0;
-z-index: -1;
+.section-top-content{
+    margin-top: 0px;
+    text-align: center;
 }
-.jumbotron-content{
-margin-top: 50px;
-text-align: center;
+.section-top-content h1{
+    font-family: Ballpark;
+    font-size: 110px;
+    color: #e5e2d4;
+    text-shadow: 3px 3px 0 #CB5A65, -3px -3px 0 #CB5A65, 5px 5px 0 rgba(52, 54, 56, 0.3);
+}    
+@media all and (max-width: 480px) {
+    .section-top-content h1{font-size: 20px;}
 }
-.jumbotron-content h1{
-font-family: Ballpark;
-font-size: 110px;
-color: #e5e2d4;
-text-shadow: 3px 3px 0 #CB5A65, -3px -3px 0 #CB5A65, 5px 5px 0 rgba(52, 54, 56, 0.3);
+@media all and (max-width: 768px) {
+    .section-top-content h1{font-size: 50px;}
 }
-.jumbotron-content h2{
-font-family: Damion;
-color: #e5e2d4;
-font-size: 52px;
-text-shadow: 2px 2px 0 #CB5A65, -2px -2px 0 #CB5A65, 4px 4px 0 rgba(52, 54, 56, 0.3);
+@media all and (max-width: 992px) {
+    .section-top-content h1{font-size: 100px;}
 }
-.jumbotron-content .btn{
-color: #e5e2d4;
-font-size: 50px;
-text-shadow: 1px 1px 0 #CB5A65, -1px 1px 0 #CB5A65, 1px -1px 0 #CB5A65, -1px -1px 0 #CB5A65, 4px 4px 0 rgba(52, 54, 56, 0.2);
-transition: all .65s;
+.section-top-content h2{
+    font-family: Damion;
+    color: #e5e2d4;
+    font-size: 52px;
+    text-shadow: 2px 2px 0 #CB5A65, -2px -2px 0 #CB5A65, 4px 4px 0 rgba(52, 54, 56, 0.3);
 }
-.jumbotron-content .btn:hover{
-/*color: rgba(0, 0, 0, 0);*/
-transform: translate(0, 5px);
--webkit-transform: translate(0, 5px);
--o-transform: translate(0, 5px);
--moz-transform: translate(0, 5px);
+@media all and (max-width: 480px) {
+    .section-top-content h2{font-size: 20px;}
+}
+@media all and (max-width: 768px) {
+    .section-top-content h2{font-size: 30px;}
+}
+@media all and (max-width: 992px) {
+    .section-top-content h2{font-size: 48px;}
+}
+.section-top-content .btn{
+    color: #e5e2d4;
+    font-size: 50px;
+    text-shadow: 1px 1px 0 #CB5A65, -1px 1px 0 #CB5A65, 1px -1px 0 #CB5A65, -1px -1px 0 #CB5A65, 4px 4px 0 rgba(52, 54, 56, 0.2);
+    transition: all .65s;
+}
+.section-top-content .btn:hover{
+    /*color: rgba(0, 0, 0, 0);*/
+    transform: translate(0, 5px);
+    -webkit-transform: translate(0, 5px);
+    -o-transform: translate(0, 5px);
+    -moz-transform: translate(0, 5px);
 }
 /* Fixed button */
 #btn-scroll-top {
-color: #E5E2D4;
-font-size: 30px;
-text-shadow: 1px 1px 0 #CB5A65, -1px 1px 0 #CB5A65, 1px -1px 0 #CB5A65, -1px -1px 0 #CB5A65, 3px 3px 0 rgba(52, 54, 56, 0.2);
-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
-border-radius: 100%;
-cursor: pointer;
-position: fixed;
-bottom: 60px;
-right: 20px; 
-height: 60px;
-width: 60px;
-line-height: 26px;
-padding: 15px;
-text-align: center;
-border-color: #CB5A65;
+    color: #E5E2D4;
+    font-size: 30px;
+    text-shadow: 1px 1px 0 #CB5A65, -1px 1px 0 #CB5A65, 1px -1px 0 #CB5A65, -1px -1px 0 #CB5A65, 3px 3px 0 rgba(52, 54, 56, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 100%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 60px;
+    right: 20px; 
+    height: 60px;
+    width: 60px;
+    line-height: 26px;
+    padding: 15px;
+    text-align: center;
+    border-color: #CB5A65;
 }
 .grow { 
-transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out; 
 }
 .grow:hover { 
-color: #E5E2D4;
-background-color: #CB5A65;
-border-color: #CB5A65; 
-transform: scale(1.1); 
--webkit-transform: scale(1.1); 
--o-transform: scale(1.1); 
--moz-transform: scale(1.1); 
+    color: #E5E2D4;
+    background-color: #CB5A65;
+    border-color: #CB5A65; 
+    transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    -o-transform: scale(1.1); 
+    -moz-transform: scale(1.1); 
 }
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-margin-bottom: 20px;
-text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .marketing h2 {
-font-weight: normal;
+    font-weight: normal;
 }
 .marketing .col-lg-4 p {
-margin-right: 10px;
-margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 /* Featurettes
 ------------------------- */
 .featurette-divider {
-margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 /* Thin out the marketing headings */
 .featurette-heading {
-font-weight: 300;
-line-height: 1;
-letter-spacing: -1px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {
-/* Navbar positioning foo */
-.navbar-wrapper {
-margin-top: 20px;
-}
-.navbar-wrapper .container {
-padding-right: 15px;
-padding-left: 15px;
-}
-.navbar-wrapper .navbar {
-padding-right: 0;
-padding-left: 0;
-}
-/* The navbar becomes detached from the top, so we round the corners */
-.navbar-wrapper .navbar {
-border-radius: 4px;
-}
-/* Bump up size of carousel content */
-.carousel-caption p {
-margin-bottom: 20px;
-font-size: 21px;
-line-height: 1.4;
-}
-.featurette-heading {
-font-size: 50px;
-}
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
 }
 @media (min-width: 992px) {
-.featurette-heading {
-margin-top: 120px;
-}
+    .featurette-heading {
+        margin-top: 120px;
+    }
 } 
 .main-body {
-margin-top: 120px;
+    margin-top: 120px;
 }
 /* FOOTER
 -------------------------------------------------- */
 /* 2-part footer. */
 /* Top footer */
 .top-footer {
-background: url('../images/color_footer.png') no-repeat center center;
-height: 250px;
-bottom: 5;
-width: 100%;
+    background: url('../images/color_footer.png') center center;
+    height: 250px;
+    bottom: 5;
+    width: 100%;
 }
 /* Social Media images */
 .row .row-social-images {
-padding-top: 20px;
+    padding-top: 20px;
 }
 .col-social-images > .img-social {
-top: 20px;
+    top: 20px;
 }
 .img-social:hover {
--webkit-filter: drop-shadow(5px 5px 5px rgba(52, 54, 56, 0.4));
-filter: url(shadow.svg#drop-shadow);
-/*opacity: 0.7;*/
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(52, 54, 56, 0.4));
+    filter: url(shadow.svg#drop-shadow);
+    /*opacity: 0.7;*/
 }
 /* Bottom footer */
 .bottom-footer {
-background: url('../images/bottom_footer.png') no-repeat center center;
-height: 50px;
-bottom: 0;
-width: 100%;
+    background: url('../images/bottom_footer.png') no-repeat center center;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
 }
 .bottom-footer h5 {
-font-weight: bold;
-color: #CBC0A6;
+    font-weight: bold;
+    color: #CBC0A6;
 }
 .bottom-footer a {
-font-weight: bold;
-color: #CBC0A6;
-display: inline;
+    font-weight: bold;
+    color: #CBC0A6;
+    display: inline;
 }
 .bottom-footer a:hover {
-text-decoration: underline;
+    text-decoration: underline;
+}
+.vertical-center {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }

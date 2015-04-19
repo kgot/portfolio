@@ -20,8 +20,3 @@ Route::get('/index', function()
 {
 	return View::make('index');
 });
-
-Route::get('/contact', function()
-{
-	return View::make('contact');
-});

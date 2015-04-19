@@ -1,33 +1,58 @@
-$(document).ready(function() {
-	$('#exampleModal').on('show.bs.modal', function (event) {
-	  var button = $(event.relatedTarget) // Button that triggered the modal
-	  var recipient = button.data('email') // Extract info from data-* attributes
-	  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-	  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-	  var modal = $(this)
-	  modal.find('.modal-title').text('New message to ' + recipient)
-	  modal.find('.modal-body input').val(recipient)
-	})	
-	/*
-	 * Enable smooth scrolling
-	 */
-	$('a[href*=#]').click(function(){
-      $('html, body').animate({
-          scrollTop: $( $(this).attr('href') ).offset().top
-      }, 500)
-    return false;
-    })
-	/*
-	 * Enable scroll-to-top button
-	 */
-	if($('.jumbotron').is(':in-viewport')){
-          $('#btn-scroll-top').hide()
-	}
-	$(window).scroll(function () {
-       if($('.jumbotron').is(':in-viewport')){
-          $('#btn-scroll-top').fadeOut('slow')
-       }else{ // If not visible
-          $('#btn-scroll-top').fadeIn('slow')
-       }
-	})
-}) // document ready
+var portfolio = angular.module('portfolio', [
+    'ngRoute',
+    'ui.bootstrap',
+    'anchorScrollOffset'
+]).run(['$anchorScroll', function($anchorScroll) {
+        $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
+    }]);
+
+portfolio.controller("PortfolioCtrl", ['$scope', function($scope) {
+        $scope.name = "kg-portfolio";
+    }]);
+
+portfolio.controller('CollapseCtrl', function($scope) {
+    $scope.isCollapsed = false;
+});
+
+portfolio.controller('DropdownCtrl', function($scope, $log) {
+    $scope.sections = [
+        'Headings',
+        'Interests',
+        'GitHub',
+        'Creativity',
+        'More'
+    ];
+
+    $scope.status = {
+        isopen: false
+    };
+
+    $scope.toggled = function(open) {
+        $log.log('Dropdown is now: ', open);
+    };
+
+    $scope.toggleDropdown = function($event) {
+        $event.preventDefault();
+        $event.stopPropagation();
+        $scope.status.isopen = !$scope.status.isopen;
+    };
+});
+
+portfolio.controller('navBarCtrl', ['$anchorScroll', '$location', '$scope',
+    function($anchorScroll, $location, $scope) {
+        $scope.gotoAnchor = function(x) {
+            var newHash = 'anchor-' + x;
+            if ($location.hash() !== newHash) {
+                // set the $location.hash to `newHash` and
+                // $anchorScroll will automatically scroll to it
+                $location.hash('anchor-' + x);
+            } else {
+                // call $anchorScroll() explicitly,
+                // since $location.hash hasn't changed
+                $anchorScroll();
+            }
+        };
+    }
+]);
+
+
