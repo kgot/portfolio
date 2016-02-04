@@ -11,12 +11,12 @@
 |
 */
 
-Route::get('/', function()
-{
+Route::get('/', function() {
 	return View::make('index');
 });
 
-Route::get('/index', function()
-{
+Route::get('index', function() {
 	return View::make('index');
 });
+
+Route::get('pdstats', 'PdStatsController@getData');

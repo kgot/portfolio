@@ -1,0 +1,10 @@
+<div class="profcard">
+  <div class="title {{ card.title.color }}">
+    <span>{{ card.title.text }}</span>
+  </div>
+  <div class="content" ng-class="{ 'hidden': card.content.shown }">
+    <span>{{ card.content.text }}</span>
+  </div>
+  <div class="image" ng-class="{ 'blur': card.image.blurred }" ng-transclude>
+  </div>
+</div>
