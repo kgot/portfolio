@@ -15,8 +15,8 @@
     }
   ]);
 
-  portfolio.controller("PortfolioCtrl", ['$scope', function($scope) {
-    $scope.name = "kg-portfolio";
+  portfolio.controller('PortfolioCtrl', ['$scope', function($scope) {
+    $scope.name = 'kg-portfolio';
   }]);
 
   portfolio.controller('CollapseCtrl', function($scope) {
@@ -86,7 +86,7 @@
       scope: {},
       replace: true,
       transclude: true,
-      templateUrl: 'templates/profcard.html',
+      templateUrl: 'profcard.html',
       controller: 'CardDirCtrl',
       controllerAs: 'card',
       bindToController: {

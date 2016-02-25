@@ -6,15 +6,15 @@ use App\Http\Controllers\Controller;
 use App\Models\Pd;
 
 class PdStatsController extends Controller {
-    
+
     private $Pd;
-    
+
     public function __construct() {
         $Pd = new Pd();
     }
 
     public function getData() {
-         
+
         $pdstacks = new SplFixedArray(4);
 
 //        foreach ($pdstacks as $pdstack) {

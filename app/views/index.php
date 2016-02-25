@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>K.G. Portfolio</title>
-  <link rel="stylesheet" href="components/bootstrap-css/bootstrap.min.css">
+  <link rel="stylesheet" href="components/bootstrap-css/css/bootstrap.min.css">
   <link rel="stylesheet" href="components/angular-bootstrap/ui-bootstrap-csp.css">
 <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 </head>
+
 <body ng-controller="PortfolioCtrl">
   <div class="navbar-wrapper">
     <div class="container">
@@ -277,12 +278,7 @@
 
 </footer>
 
-<script src="components/angular/angular.js"></script>
-<script src="components/angular-route/angular-route.min.js"></script>
-<script src="components/angular-resource/angular-resource.min.js"></script>
-<script src="components/angular-animate/angular-animate.min.js"></script>
-<script src="components/angular-smooth-scroll/angular-smooth-scroll.min.js"></script>
-<script src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-<script src="js/dist/all.min.js"></script>
+<script src="js/dist/bundle-e6a827d4fc.js"></script>
+<script src="js/dist/all-c0c9b6ed96.js"></script>
 </body>
 </html>
