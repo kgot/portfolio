@@ -278,7 +278,7 @@
 
 </footer>
 
-<script src="js/dist/bundle-e6a827d4fc.js"></script>
-<script src="js/dist/all-c0c9b6ed96.js"></script>
+<script src="js/dist/bundle-00078cc0b9.min.js"></script>
+<script src="js/dist/all-6618baeb26.min.js"></script>
 </body>
 </html>
